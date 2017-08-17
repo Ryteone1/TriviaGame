@@ -9,14 +9,22 @@
 // 	    }
 // 	    document.getElementById("order").value = "You ordered a coffee with: " + txt;
 // 	}
+
+// Hides the start button once it is clicked
 $(function(){
         $('#start').click(function() {
             $(this).hide();
         });
     });
 
+// Hides the questions once the submit button is clicked
+$(function(){
+	$('#submit').click(function() {
+		$('#game-questions').hide();
+	});
+});
 
-
+// Users will have 90 seconds to answer questions
 var number = 90;
 
 var intervalId;
@@ -45,10 +53,12 @@ function stop() {
   clearInterval(intervalId);
 }
 
-run();
 
 
 
+var correctCounter = 0;
+var incorrectCounter = 0;
+var unansweredcounter = 0;
 
 
 $("#q1").on("click", "input", function() {
@@ -59,6 +69,7 @@ $("#q1").on("click", "input", function() {
 
 	if(questionOne == "john-mary") {
 		correctCounter++;
+		$("#correctAnswers").append(correctCounter++);
 		console.log(correctCounter);		
 	}else if(questionOne != "john-mary") {
 		incorrectCounter++;
@@ -77,6 +88,7 @@ $("#q2").on("click", "input", function() {
 
 	if(questionTwo == "18") {
 		correctCounter++;
+		$("#correctAnswers").append(correctCounter++);
 		console.log(correctCounter);		
 	}else if(questionTwo != "18") {
 		incorrectCounter++;
@@ -95,6 +107,7 @@ $("#q3").on("click", "input", function() {
 
 	if(questionThree == "cocker-spaniel") {
 		correctCounter++;
+		$("#correctAnswers").append(correctCounter++);
 		console.log(correctCounter);		
 	}else if(questionThree != "cocker-spaniel") {
 		incorrectCounter++;
@@ -113,6 +126,7 @@ $("#q4").on("click", "input", function() {
 
 	if(questionFour == "31") {
 		correctCounter++;
+		$("#correctAnswers").append(correctCounter++);
 		console.log(correctCounter);		
 	}else if(questionFour != "31") {
 		incorrectCounter++;
@@ -131,6 +145,7 @@ $("#q5").on("click", "input", function() {
 
 	if(questionFive == "compact-disk-player") {
 		correctCounter++;
+		$("#correctAnswers").append(correctCounter++);
 		console.log(correctCounter);		
 	}else if(questionFive != "compact-disk-player") {
 		incorrectCounter++;
@@ -140,3 +155,6 @@ $("#q5").on("click", "input", function() {
 		console.log(unansweredcounter);
 	}
 });
+
+
+run();

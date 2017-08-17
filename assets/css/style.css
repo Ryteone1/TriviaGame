@@ -3,13 +3,25 @@
 	text-align: center;
 }
 
-/*#header {
-	background: #999;
-}*/
+#header
+#start
+#time-remaining {
+	position: fixed;
+	z-index: 99;
+	background: lightblue;
+	width: 100%;
+	text-align: center;
+}
+
+
 
 
 button:hover {
   background: lightsalmon;
+}
+
+h1 {
+	font-weight: 700;
 }
 
 h4 {
