@@ -25,17 +25,22 @@
 
 	<div id="header">
 		<h1>From Whence We Came</h1>
+	</div>
 
-	
 	<div id="game-questions" style="display:none">
 
+	<div id="time-remaining"></div>
+	<br>
+	<br>
+
 	<form id="q1">
+	<br>
 		<h4>1.  In the year 1900 in the U.S. what were the most popular first names given to boy and girl babies?</h4>
 		<br>
-		<input type="radio" name="artist" value="will-elizabeth">William and Elizabeth
-  		<input type="radio" name="artist" value="joseph-catherines">Joseph and Catherine
-  		<input type="radio" name="artist" value="john-mary">John and Mary
-  		<input type="radio" name="artist" value="george-anne">George and Anne
+		<input type="radio" name="factoid" value="will-elizabeth">William and Elizabeth
+  		<input type="radio" name="factoid" value="joseph-catherines">Joseph and Catherine
+  		<input type="radio" name="factoid" value="john-mary">John and Mary
+  		<input type="radio" name="factoid" value="george-anne">George and Anne
   	</form>
 		<br>
 		<br>
@@ -44,10 +49,10 @@
 	<form id="q2">
 		<h4>2.  In 1990, in what percentage of U.S. married couples did the wife earn more money than the husband?</h4>
 		<br>
-		<input type="radio" name="artist" value="8">8
-  		<input type="radio" name="artist" value="18">18
-  		<input type="radio" name="artist" value="38">38
-  		<input type="radio" name="artist" value="58">58
+		<input type="radio" name="factoid" value="8">8
+  		<input type="radio" name="factoid" value="18">18
+  		<input type="radio" name="factoid" value="38">38
+  		<input type="radio" name="factoid" value="58">58
   	</form>
 		<br>
 		<br>
@@ -56,10 +61,10 @@
 	<form id="q3">
 		<h4>3.  During the 1980s for six consecutive years what breed of dog was the most popular in the U.S.?</h4>
 		<br>
-		<input type="radio" name="artist" value="cocker-spaniel">Cocker Spaniel
-  		<input type="radio" name="artist" value="german-shepherd">German Shepherd
-  		<input type="radio" name="artist" value="labrador-retriever">Labrador Retriever
-  		<input type="radio" name="artist" value="poodle">Poodle
+		<input type="radio" name="factoid" value="cocker-spaniel">Cocker Spaniel
+  		<input type="radio" name="factoid" value="german-shepherd">German Shepherd
+  		<input type="radio" name="factoid" value="labrador-retriever">Labrador Retriever
+  		<input type="radio" name="factoid" value="poodle">Poodle
   	</form>
 		<br>
 		<br>
@@ -68,10 +73,10 @@
 	<form id="q4">
 		<h4>4.  In 1985, five percent of U.S. households had telephone answering machines. By 1990 what percentage of homes had answering machines?</h4>
 		<br>
-		<input type="radio" name="artist" value="10">10
-  		<input type="radio" name="artist" value="15">15
-  		<input type="radio" name="artist" value="31">31
-  		<input type="radio" name="artist" value="51">51
+		<input type="radio" name="factoid" value="10">10
+  		<input type="radio" name="factoid" value="15">15
+  		<input type="radio" name="factoid" value="31">31
+  		<input type="radio" name="factoid" value="51">51
   	</form>
 		<br>
 		<br>
@@ -80,45 +85,34 @@
 	<form id="q5">
 		<h4>5.  Which of the following items was owned by the fewest U.S. homes in 1990?</h4>
 		<br>
-		<input type="radio" name="artist" value="home-computer">home computer
-  		<input type="radio" name="artist" value="compact-disk-player">compact disk player
-  		<input type="radio" name="artist" value="cordless-phone">cordless phone
-  		<input type="radio" name="artist" value="dishwasher">dishwasher
+		<input type="radio" name="factoid" value="home-computer">home computer
+  		<input type="radio" name="factoid" value="compact-disk-player">compact disk player
+  		<input type="radio" name="factoid" value="cordless-phone">cordless phone
+  		<input type="radio" name="factoid" value="dishwasher">dishwasher
   	</form>
 		<br>
 		<br>
 
+<!-- <div id="hide-button" style="display:none"> -->
+	<button id="submit" type="button" onclick="document.getElementById('results').style.display='block'">Submit</button>
+<!-- </div> -->
+
+</div>
+			
+
+	<button id="start" type="button" onclick="document.getElementById('game-questions').style.display='block'">Start</button>
+
+	<div id="results" style="display:none">
 		
-
-
-
-
-
-		
-
-
-
-		
-
-<!-- <form action="/action_page.php">
-  <input type="radio" name="coffee" value="toy-story">Toy Story
-  <input type="radio" name="coffee" value="cars">Cars
-  <input type="radio" name="coffee" value="toy-story">A bug's Life
-  <input type="radio" name="coffee" value="cars">Aladdin
-  <br>
-  <input type="button" onclick="myFunction()" value="Send order">
-  <br><br>
-  <input type="text" id="order" size="50">
-  <input type="submit" value="Submit">
-</form> -->
-
+		<h4>Correct Answers: <span id="wins"></span></h4>
+		<h4>Incorrect Answers: <span id="incorrectAnswers"></span></h4>
+		<h4>Unanswered: <span id="unanswered"></span></h4>
 
 	</div>
 
-	<button type="button" onclick="document.getElementById('game-questions').style.display='block'">Start</button>
 
 
-	</div>
+	
 	
 </div>
 	

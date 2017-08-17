@@ -1,9 +1,17 @@
-#header {
+#container-fluid {
 	background: lightblue;
 	text-align: center;
 }
 
+/*#header {
+	background: #999;
+}*/
+
 
 button:hover {
   background: lightsalmon;
+}
+
+h4 {
+	font-weight: 700;
 }
