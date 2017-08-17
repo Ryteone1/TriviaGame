@@ -24,47 +24,83 @@
 <div id="container-fluid">
 
 	<div id="header">
-		<h1>Totally Trivial Trivia!</h1>
+		<h1>From Whence We Came</h1>
 
-
+	
 	<div id="game-questions" style="display:none">
-		What was the first full length CGI movie?<br>
-		<input type="radio" name="coffee" value="toy-story">Toy Story
-  		<input type="radio" name="coffee" value="cars">Cars
-  		<input type="radio" name="coffee" value="toy-story">A bug's Life
-  		<input type="radio" name="coffee" value="cars">Aladdin
+
+	<form id="q1">
+		<h4>1.  In the year 1900 in the U.S. what were the most popular first names given to boy and girl babies?</h4>
+		<br>
+		<input type="radio" name="artist" value="will-elizabeth">William and Elizabeth
+  		<input type="radio" name="artist" value="joseph-catherines">Joseph and Catherine
+  		<input type="radio" name="artist" value="john-mary">John and Mary
+  		<input type="radio" name="artist" value="george-anne">George and Anne
+  	</form>
 		<br>
 		<br>
-		What was the first full length CGI movie?<br>
-		A	B	C	D<br>
+
+
+	<form id="q2">
+		<h4>2.  In 1990, in what percentage of U.S. married couples did the wife earn more money than the husband?</h4>
 		<br>
-		What was the first full length CGI movie?<br>
-		A	B	C	D<br>
+		<input type="radio" name="artist" value="8">8
+  		<input type="radio" name="artist" value="18">18
+  		<input type="radio" name="artist" value="38">38
+  		<input type="radio" name="artist" value="58">58
+  	</form>
 		<br>
-		What was the first full length CGI movie?<br>
-		A	B	C	D<br>
 		<br>
-		What was the first full length CGI movie?<br>
-		A	B	C	D<br>
+
+
+	<form id="q3">
+		<h4>3.  During the 1980s for six consecutive years what breed of dog was the most popular in the U.S.?</h4>
 		<br>
-		What was the first full length CGI movie?<br>
-		A	B	C	D<br>
+		<input type="radio" name="artist" value="cocker-spaniel">Cocker Spaniel
+  		<input type="radio" name="artist" value="german-shepherd">German Shepherd
+  		<input type="radio" name="artist" value="labrador-retriever">Labrador Retriever
+  		<input type="radio" name="artist" value="poodle">Poodle
+  	</form>
 		<br>
-		What was the first full length CGI movie?<br>
-		A	B	C	D<br>
 		<br>
-		What was the first full length CGI movie?<br>
-		A	B	C	D<br>
+
+
+	<form id="q4">
+		<h4>4.  In 1985, five percent of U.S. households had telephone answering machines. By 1990 what percentage of homes had answering machines?</h4>
 		<br>
-		What was the first full length CGI movie?<br>
-		A	B	C	D<br>
+		<input type="radio" name="artist" value="10">10
+  		<input type="radio" name="artist" value="15">15
+  		<input type="radio" name="artist" value="31">31
+  		<input type="radio" name="artist" value="51">51
+  	</form>
 		<br>
+		<br>
+
+
+	<form id="q5">
+		<h4>5.  Which of the following items was owned by the fewest U.S. homes in 1990?</h4>
+		<br>
+		<input type="radio" name="artist" value="home-computer">home computer
+  		<input type="radio" name="artist" value="compact-disk-player">compact disk player
+  		<input type="radio" name="artist" value="cordless-phone">cordless phone
+  		<input type="radio" name="artist" value="dishwasher">dishwasher
+  	</form>
+		<br>
+		<br>
+
+		
+
+
 
 
 
 		
 
-<form action="/action_page.php">
+
+
+		
+
+<!-- <form action="/action_page.php">
   <input type="radio" name="coffee" value="toy-story">Toy Story
   <input type="radio" name="coffee" value="cars">Cars
   <input type="radio" name="coffee" value="toy-story">A bug's Life
@@ -74,7 +110,7 @@
   <br><br>
   <input type="text" id="order" size="50">
   <input type="submit" value="Submit">
-</form>
+</form> -->
 
 
 	</div>
@@ -90,17 +126,7 @@
 
 	<script src="assets/javascript/app.js" type="text/javascript">
 
-		function myFunction() {
-	    var coffee = document.forms[0];
-	    var txt = "";
-	    var i;
-	    for (i = 0; i < coffee.length; i++) {
-	        if (coffee[i].checked) {
-	            txt = txt + coffee[i].value + " ";
-	        }
-	    }
-	    document.getElementById("order").value = "You ordered a coffee with: " + txt;
-	}
+		
 
 	</script>  
 
