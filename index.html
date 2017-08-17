@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TriviaGame</title>	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1,">
+
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+	
+</head>
+
+<body>
+<div id="container-fluid">
+
+	<div id="header">
+		<h1>Totally Trivial Trivia!</h1>
+
+
+	<div id="game-questions" style="display:none">
+		What was the first full length CGI movie?<br>
+		<input type="radio" name="coffee" value="toy-story">Toy Story
+  		<input type="radio" name="coffee" value="cars">Cars
+  		<input type="radio" name="coffee" value="toy-story">A bug's Life
+  		<input type="radio" name="coffee" value="cars">Aladdin
+		<br>
+		<br>
+		What was the first full length CGI movie?<br>
+		A	B	C	D<br>
+		<br>
+		What was the first full length CGI movie?<br>
+		A	B	C	D<br>
+		<br>
+		What was the first full length CGI movie?<br>
+		A	B	C	D<br>
+		<br>
+		What was the first full length CGI movie?<br>
+		A	B	C	D<br>
+		<br>
+		What was the first full length CGI movie?<br>
+		A	B	C	D<br>
+		<br>
+		What was the first full length CGI movie?<br>
+		A	B	C	D<br>
+		<br>
+		What was the first full length CGI movie?<br>
+		A	B	C	D<br>
+		<br>
+		What was the first full length CGI movie?<br>
+		A	B	C	D<br>
+		<br>
+
+
+
+		
+
+<form action="/action_page.php">
+  <input type="radio" name="coffee" value="toy-story">Toy Story
+  <input type="radio" name="coffee" value="cars">Cars
+  <input type="radio" name="coffee" value="toy-story">A bug's Life
+  <input type="radio" name="coffee" value="cars">Aladdin
+  <br>
+  <input type="button" onclick="myFunction()" value="Send order">
+  <br><br>
+  <input type="text" id="order" size="50">
+  <input type="submit" value="Submit">
+</form>
+
+
+	</div>
+
+	<button type="button" onclick="document.getElementById('game-questions').style.display='block'">Start</button>
+
+
+	</div>
+	
+</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="assets/javascript/app.js" type="text/javascript">
+
+		function myFunction() {
+	    var coffee = document.forms[0];
+	    var txt = "";
+	    var i;
+	    for (i = 0; i < coffee.length; i++) {
+	        if (coffee[i].checked) {
+	            txt = txt + coffee[i].value + " ";
+	        }
+	    }
+	    document.getElementById("order").value = "You ordered a coffee with: " + txt;
+	}
+
+	</script>  
+
+</body>
+</html>
